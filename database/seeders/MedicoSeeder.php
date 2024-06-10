@@ -13,17 +13,18 @@ class MedicoSeeder extends Seeder
      */
     public function run(): void
     {
+        //Crea un registro real
         $med = new Medico;
-        $med->codigo = 1_1234_1235;
-        $med->nombre = 'NoMBre2';
-        $med->apellido1 = 'apedilLidO2';
-        $med->apellido2 = 'apedilLidO2';
-        $med->telefono = 1234_1234;
-        $med->direccion = 'Direccion de prueba2';
-        $med->email = 'email@test.com2';
+        $med->codigo = 5_0446_0268;
+        $med->nombre = 'Aaron';
+        $med->apellido1 = 'Mena';
+        $med->apellido2 = 'Bogarin';
+        $med->telefono = 8458_6727;
+        $med->direccion = 'Barrio Buenos Aires';
+        $med->email = 'aamenabo@est.utn.ac.cr';
         $med->save();
 
-
-        Medico::factory(10)->create();
+        //Crea registros de prueba
+        Medico::factory(100)->create();
     }
 }
