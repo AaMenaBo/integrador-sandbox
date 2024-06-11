@@ -7,8 +7,8 @@ use Illuminate\Http\Request;
 class HomeController extends Controller
 {
     //Usar solo cuando hay un solo metodo para el controlador 
-    public function __invoke()
+    public function index()
     {
-        return 'Retorno desde el controlador';
+        return view('home');
     }
 }

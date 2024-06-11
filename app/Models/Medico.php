@@ -44,6 +44,17 @@ class Medico extends Model
             }
         );
     }
+    protected function email(): Attribute
+    {
+        return Attribute::make(
+            set: function ($value) {
+                return strtolower($value);
+            },
+            get: function ($value) {
+                return ucfirst($value);
+            }
+        );
+    }
     protected function direccion(): Attribute
     {
         return Attribute::make(
