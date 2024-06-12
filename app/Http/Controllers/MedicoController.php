@@ -17,7 +17,7 @@ class MedicoController extends Controller
     //Manejo de ruta para ver los registros
     public function index()
     {
-        return view('medico.index', ['medicos' => Medico::orderBy('id', 'desc')->get()]);
+        return view('medico.index', ['medicos' => Medico::paginate(10)]);
     }
 
     //Manejo de ruta para formulario

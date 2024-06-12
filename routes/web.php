@@ -32,4 +32,5 @@ Route::get('/medicos/{id}/edit', [MedicoController::class, 'edit'])
 Route::put('/medicos/{id}/edit', [MedicoController::class, 'update'])
     ->name('medico.update');
 //Ruta DELETE
-Route::delete('/medicos/{id}/delete', [MedicoController::class, 'delete']);
+Route::delete('/medicos/{id}/delete', [MedicoController::class, 'delete'])
+    ->name('medico.delete');

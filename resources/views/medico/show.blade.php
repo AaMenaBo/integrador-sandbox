@@ -22,7 +22,7 @@
     <a href="/medicos/{{ $medico->id }}/edit">Editar Información</a>
     <form action="/medicos/{{ $medico->id }}/delete"method="POST">
         @csrf
-        @method('DELETE')
+        @method('PUT')
         <button type="submit">BORRAR REGISTRO</button>
     </form>
 
